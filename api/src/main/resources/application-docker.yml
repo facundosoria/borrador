@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:postgres}:${DB_PORT:5432}/${DB_NAME:puchamon}
+    username: ${DB_USER:puchamon}
+    password: ${DB_PASSWORD:puchamon}
