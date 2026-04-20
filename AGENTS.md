@@ -1,8 +1,10 @@
 # AGENTS - Proyecto Puchamon
 
+## Objetivo
+Definir reglas y fuentes de verdad para el desarrollo del proyecto.
+
 ## Scope
 - Monolito modular con `api/`, `front/`, `infra/`, `docs/`, `scripts/`.
-- Backend: Java 21 + Spring Boot 3.x. Front: Angular 21+. DB: PostgreSQL.
 
 ## Fuentes de verdad obligatorias
 - `docs/requirements/`.
@@ -17,6 +19,11 @@
 - Fuente principal: XY1 rulebook modularizado en `docs/rules/`.
 - TPI aplica solo si no contradice XY1.
 - Excepcion: Energias Especiales maximo 4 copias por mazo.
+
+## Stack tecnologico
+- Backend: Java 21 + Spring Boot 3.x.
+- Front: Angular 21+.
+- DB: PostgreSQL.
 
 ## Comandos base
 - Levantar entorno: `./scripts/dev-up.sh`.
@@ -40,6 +47,14 @@
 - PostgreSQL es la base principal.
 - Las cartas se almacenan con esquema hibrido (campos fijos + `jsonb`).
 - El seed de cartas debe ser idempotente.
+
+## Flujo de trabajo
+- Analisis -> especificacion -> planificacion -> implementacion -> verificacion.
+
+## Restricciones absolutas
+- No inventar APIs o librerias inexistentes.
+- No incluir secretos; usar variables de entorno.
+- No modificar DB o esquemas sin documentar impacto.
 
 ## Skills prioritarias
 - find-skills

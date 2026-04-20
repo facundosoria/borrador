@@ -1,5 +1,8 @@
 # AGENTS - Docs
 
+## Objetivo
+Definir reglas de documentacion tecnica y entregables.
+
 ## Scope
 - Documentacion tecnica y entregables.
 
@@ -22,6 +25,14 @@
 - OpenAPI y eventos WebSocket deben reflejar el codigo real.
 - Documentar DB, seeds y migraciones.
 - Checklist final contra RF/RNF.
+
+## Flujo de trabajo
+- Analisis -> especificacion -> planificacion -> implementacion -> verificacion.
+
+## Restricciones absolutas
+- No inventar APIs o librerias inexistentes.
+- No incluir secretos; usar variables de entorno.
+- No modificar DB o esquemas sin documentar impacto.
 
 ## Skills prioritarias
 - code-documenter

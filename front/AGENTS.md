@@ -1,5 +1,8 @@
 # AGENTS - Front
 
+## Objetivo
+Definir reglas del frontend y lineamientos de UI.
+
 ## Scope
 - Angular 21+ con TypeScript estricto.
 - UI de login, deck builder, lobby y tablero.
@@ -13,6 +16,10 @@
 - Leer `docs/rules/index.md` primero.
 - Cargar solo los modulos listados por accion.
 
+## Stack tecnologico
+- Angular 21+.
+- TypeScript estricto.
+
 ## Reglas funcionales
 - No implementar reglas de negocio criticas en frontend.
 - Front solo representa estado enviado por backend.
@@ -23,6 +30,14 @@
 ## Calidad
 - Flujos E2E: login -> deck -> lobby -> turno.
 - Accesibilidad y usabilidad verificables.
+
+## Flujo de trabajo
+- Analisis -> especificacion -> planificacion -> implementacion -> verificacion.
+
+## Restricciones absolutas
+- No inventar APIs o librerias inexistentes.
+- No incluir secretos; usar variables de entorno.
+- No modificar DB o esquemas sin documentar impacto.
 
 ## Skills prioritarias
 - angular-developer
